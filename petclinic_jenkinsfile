@@ -25,7 +25,7 @@ pipeline{
       }
     stage('build'){
       steps{
-        sh 'mvn -f otherdirectory/pom.xml clean install'
+        sh 'mvn -f spring-petclinic/pom.xml clean install'
       }
     }
     stage('deploy'){
