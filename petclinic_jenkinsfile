@@ -14,7 +14,7 @@ pipeline{
     }
     stage('build'){
       steps{
-        mvn clean package
+        mvn package
         cleanWs()
       }
     }
